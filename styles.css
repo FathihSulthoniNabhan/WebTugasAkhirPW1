@@ -1,0 +1,186 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #528cbe; /* Warna latar belakang lebih netral */
+    color: #333; /* Warna teks gelap untuk keterbacaan */
+}
+
+.navbar {
+    background-color: #003366; /* Warna navbar biru tua */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #000; /* Warna teks navbar menjadi hitam */
+}
+
+.navbar-nav .nav-link {
+    color: #000; /* Warna teks link navbar menjadi hitam */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; /* Warna saat hover link navbar */
+}
+
+/* Hero Section */
+.hero {
+    background: url('assets/hero.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    color: white;
+    background-size: cover; /* Pastikan gambar latar belakang selalu menutupi area */
+    background-position: center center; /* Menjaga gambar tetap terpusat */
+}
+
+.hero h1 {
+    font-size: 2.5rem; /* Ukuran font lebih kecil agar gambar tetap terlihat */
+    font-weight: bold;
+    z-index: 1; /* Pastikan teks berada di atas gambar */
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+/* Carousel Section */
+.carousel-inner {
+    position: relative;
+    max-height: 60vh; /* Menyesuaikan tinggi carousel */
+}
+
+.carousel-item img {
+    object-fit: cover; /* Gambar memenuhi area dengan aspek rasio yang benar */
+    width: 100%;
+    height: 100%; /* Pastikan gambar memenuhi seluruh area */
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3); /* Mengurangi opacity background caption */
+    color: white;
+    padding: 10px;
+}
+
+.carousel-caption h5 {
+    font-size: 2rem; /* Ukuran teks judul caption lebih kecil */
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.1rem; /* Ukuran teks deskripsi caption lebih kecil */
+}
+
+/* Tentang Kami Section */
+.tentang-kami {
+    padding: 60px 0;
+    background-color: #fff; /* Latar belakang putih untuk section */
+    text-align: center;
+}
+
+h2 {
+    color: #003366; /* Warna heading utama */
+    font-weight: bold;
+}
+
+.tentang-kami img {
+    max-width: 100%; /* Memastikan gambar tidak melebihi lebar kontainer */
+    height: auto; /* Menjaga aspek rasio gambar agar tetap proporsional */
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #003366; /* Warna latar belakang footer */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Layanan Section */
+section {
+    padding: 60px 0;
+    background-color: #fff; /* Latar belakang putih untuk section layanan */
+}
+
+h2 {
+    color: #003366; /* Warna heading utama */
+    font-weight: bold;
+}
+
+img {
+    max-height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Kontak Section */
+a.btn-success {
+    background-color: #28a745; /* Warna tombol WhatsApp */
+    border-color: #28a745;
+}
+
+a.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Forms */
+textarea,
+input[type="text"],
+input[type="email"] {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #003366; /* Fokus border berwarna biru */
+    box-shadow: 0 0 5px rgba(0, 77, 122, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 1.3rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+
+    .navbar-brand img {
+        width: 120px; /* Mengurangi ukuran logo pada perangkat mobile */
+    }
+
+    .tentang-kami h2 {
+        font-size: 1.75rem; /* Mengurangi ukuran heading pada perangkat kecil */
+    }
+
+    .tentang-kami p {
+        font-size: 1rem; /* Mengurangi ukuran font untuk paragraf */
+    }
+
+    .tentang-kami img {
+        width: 100%; /* Membuat gambar memenuhi lebar layar pada perangkat mobile */
+        height: auto; /* Menjaga rasio gambar agar tidak terdistorsi */
+    }
+}
